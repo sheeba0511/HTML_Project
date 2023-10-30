@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div class="calculator">
+        <form>
+          <div id="display1">
+            <input
+              type="text"
+              name="display"
+              id="fname"
+              onkeyup="myFunction()"
+            />
+          </div>
+          <div>
+            <input
+              type="button"
+              value="AC"
+              onclick="display.value ='' "
+              class="header AC"
+            />
+            <input
+              type="button"
+              value="DE"
+              onclick="display.value =display.value.toString().slice(0,-1) "
+              class="header"
+            />
+            <input
+              type="button"
+              value="."
+              onclick="display.value +='.' "
+              class="header btndot"
+            />
+            <input
+              type="button"
+              value="/"
+              onclick="display.value +='/' "
+              class="header btndivide"
+            />
+          </div>
+          <div>
+            <input
+              type="button"
+              value="7"
+              onclick="display.value +='7' "
+              class="header btn7"
+            />
+            <input
+              type="button"
+              value="8"
+              onclick="display.value += '8' "
+              class="header btn8"
+            />
+            <input
+              type="button"
+              value="9"
+              onclick="display.value += '9' "
+              class="header btn9"
+            />
+            <input
+              type="button"
+              value="*"
+              onclick="display.value += '*' "
+              class="header btnmultiply"
+            />
+          </div>
+          <div>
+            <input
+              type="button"
+              value="4"
+              onclick="display.value += '4' "
+              class="header btn4"
+            />
+            <input
+              type="button"
+              value="5"
+              onclick="display.value += '5' "
+              class="header btn5"
+            />
+            <input
+              type="button"
+              value="6"
+              onclick="display.value += '6' "
+              class="header btn6"
+            />
+            <input
+              type="button"
+              value="-"
+              onclick="display.value += '-' "
+              class="header btnminus"
+            />
+          </div>
+          <div>
+            <input
+              type="button"
+              value="1"
+              onclick="display.value += '1' "
+              class="header btn1"
+            />
+            <input
+              type="button"
+              value="2"
+              onclick="display.value += '2' "
+              class="header btn2"
+            />
+            <input
+              type="button"
+              value="3"
+              onclick="display.value += '3' "
+              class="header btn3"
+            />
+            <input
+              type="button"
+              value="+"
+              onclick="display.value += '+' "
+              class="header btnplus"
+            />
+          </div>
+          <div>
+            <input
+              type="button"
+              value="00"
+              onclick="display.value += '00' "
+              class="header btnzerox"
+            />
+            <input
+              type="button"
+              value="0"
+              onclick="display.value += '0' "
+              class="header btnzero"
+            />
+            <input
+              type="button"
+              value="="
+              onclick="display.value = eval(display.value)"
+              class="equal header btnequall"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script>
+      function myFunction() {
+        let docs = document.getElementById("fname").value;
+        let button = document.getElementsByClassName("btn7")[0];
+        if (docs.includes(7)) {
+          button.classList.add("active-bg-color");
+        } else {
+          button.classList.remove("active-bg-color");
+        }
+      }
+    </script>
+  </body>
+</html>

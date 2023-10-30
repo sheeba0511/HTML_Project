@@ -1,0 +1,130 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+#boxmain{
+    display: flex;
+    justify-content: space-between;
+    width:100%;  
+    font-size: 19px;
+    background-color: #e5e5e5;
+
+}
+#box-1{
+    display: flex; 
+    gap:16px;  
+    align-items: center;
+}
+.box-one{
+    color: #0c7e4f;
+    padding: 8px;
+}
+
+.box-select{
+border:none;
+}
+
+.box-one-right{
+   display: flex;
+    padding: 10px;
+    gap:16px;
+    align-items: center;
+}  
+button{
+    width:80px;
+    height:40px;
+    border-radius: 20px;
+    align-items: center;
+    display: flex;
+    justify-content:space-evenly;
+    border:none;
+
+}
+.box-button1{
+    background-color: #0c7e4f ;
+    color:white;
+}
+.box-button2{
+    background-color:rgb(218, 231, 236);
+}
+
+#box-2{
+    display:flex; 
+    justify-content: space-between;
+    background-color: black;
+    color:white;
+}
+.secondleft{
+    padding:10px;
+    display: flex;
+    gap:18px;
+    font-size: 19px;
+    align-items: center;
+    
+}
+.secondright{
+    padding:10px;
+    display: flex;
+    font-size: 19px;
+    gap:18px;
+   
+}
+#bottom{
+    display: flex;
+}
+#sidebar{
+    background-color: #e5e5e5;
+    font-size: 19px;
+    padding:10px;
+    width:18%;
+}
+ #rightsidebar{
+    width:60%;
+    padding:15px;
+    background-color:#e5e5e5;
+}
+.blank{
+    margin:auto;
+    width:85%;
+    height:55px;
+    background-color: rgb(9, 9, 103);
+}
+.head{
+    padding:25px;
+    height:100px;
+}
+.btn{
+  display: flex; 
+  justify-content: space-between;
+  padding-top: 20px;
+  
+ 
+}
+#btn1{
+    background-color: #0c7e4f;
+    border-radius: 6px; 
+    font-size: 17px;
+    color: white;
+}
+#btn2{
+    background-color: #0c7e4f;
+    border-radius: 6px;
+    font-size: 17px;
+    color: white; 
+}
+#para{
+    font-size: 19px; 
+    height:150px;
+    padding: 15px;
+}
+.botbtn{
+    padding-top:20px;
+}
+#buntn{
+    font-size: 16px;
+    background-color: #0c7e4f;
+    height:45px;
+    width:230px;
+    color:white;
+    border-radius:6px;
+}
